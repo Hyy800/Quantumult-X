@@ -1,6 +1,6 @@
 ### Tg 通知頻道 👉🏻[Cuttlefishの自留地](https://t.me/ddgksf2021)👈🏻  
 
-> [***本库内容禁止公众号、自媒体进行任何形式的转载或发布***](https://github.com/ddgksf2013/ddgksf2013/issues)
+
 
 ## 1️⃣QuantumultX 小白2.0配置：
 * 配置更新时间：2024-09-27
