@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.safeapp\.studio\/super-app-lock\/member\/info url script-response-body https://raw.githubusercontent.com/Hyy-Max/Quantumult-X/refs/heads/main/pojie/chaojiyingyongsuo.js
+^https:\/\/api\.safeapp\.studio\/super-app-lock\/member\/info url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/chaojiyingyongsuo.js
 [mitm]
 hostname = api.safeapp.studio
 
