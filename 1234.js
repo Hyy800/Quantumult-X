@@ -10,7 +10,21 @@
 **************************************
 
 [rewrite_local]
-^http?:\/\/101\.34\.60\.156:6543\/sk-api\/user\/open_vip url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
+^http:\/\/101\.34\.60\.156:6543\/sk-api\/user\/open_vip url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
 
 [mitm]
 hostname = 101.34.60.156
+
+*************************************/
+
+var hyy = JSON.parse($response.body);
+const Hyy666 = typeof $task !== "undefined";
+
+hyy = {
+  "msg" : "没钱也要充",
+  "code" : 1
+}
+;
+$done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
+
+
