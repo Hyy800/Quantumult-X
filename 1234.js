@@ -29,6 +29,9 @@ hyy = {
     "group_id" : 9,
     "user_nick_name" : "请小心你的菊花",
     "user_qq" : "9",
+    "user_name" : "2205333599@qq.com",
+    "user_email" : "2205333599@qq.com",
+    "user_random" : "2205333599@qq.com",
   },
   "code" : 200
 };
