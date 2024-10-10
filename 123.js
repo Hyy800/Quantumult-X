@@ -23,12 +23,15 @@ const Hyy666 = typeof $task !== "undefined";
 hyy = {
   "data" : {
     "tgm" : "aoldgb",
-    "user_points" : 9,
-    "user_id" : 9,
-    "user_phone" : "9",
-    "user_extend" : 9,
-    "group_id" : 9,
+    "user_points" : 20,
+    "user_id" : 459,
+    "user_phone" : "20",
+    "user_extend" : 20,
+    "group_id" : 20,
+    "user_nick_name" : "请小心你的菊花",
+    "user_qq" : "20",
   },
   "code" : 200
-};
+}
+;
 $done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
