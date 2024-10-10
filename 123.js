@@ -7,7 +7,6 @@
 电报频道：
 使用声明：⚠️仅供参考，🈲转载与售卖！
 
-
 **************************************
 
 [rewrite_local]
@@ -24,13 +23,13 @@ const Hyy666 = typeof $task !== "undefined";
 hyy = {
   "data" : {
     "tgm" : "aoldgb",
-    "user_points" : 20,
+    "user_points" : 1,
     "user_id" : 459,
-    "user_phone" : "20",
-    "user_extend" : 20,
-    "group_id" : 20,
+    "user_phone" : "1",
+    "user_extend" : 1,
+    "group_id" : 1,
     "user_nick_name" : "请小心你的菊花",
-    "user_qq" : "20",
+    "user_qq" : "1",
   },
   "code" : 200
 };
