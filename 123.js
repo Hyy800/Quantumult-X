@@ -32,6 +32,5 @@ hyy = {
     "user_qq" : "20",
   },
   "code" : 200
-}
-;
+};
 $done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
