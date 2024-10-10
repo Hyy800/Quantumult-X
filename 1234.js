@@ -25,10 +25,10 @@ hyy = {
     {
       "data" : [
         {
-          "vod_sub" : "",
-          "vod_pic_slide" : "",
-          "vod_score" : 2,
-          "group_id" : 6,
+          "vod_sub" : "1",
+          "vod_pic_slide" : "1",
+          "vod_score" : 1,
+          "group_id" : 1,
        }
     ]}
 ]};
