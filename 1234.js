@@ -22,13 +22,13 @@ const Hyy666 = typeof $task !== "undefined";
 
 hyy = {
   "data" : {
-    "user_points" : 9999,
-    "user_id" : 9999,
-    "user_phone" : "9999",
-    "user_extend" : 9999,
-    "group_id" : 9999,
+    "user_points" : 1,
+    "user_id" : 1,
+    "user_phone" : "1",
+    "user_extend" : 1,
+    "group_id" : 1,
     "user_nick_name" : "请小心你的菊花",
-    "user_qq" : "9999",
+    "user_qq" : "1",
   },
   "code" : 200
 };
