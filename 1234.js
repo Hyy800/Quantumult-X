@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^http:\/\/101\.34\.60\.156:6543\/app\/config url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
+^http:\/\/101\.34\.60\.156:6543\/sk-api\/vod\/bangdan url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
 
 [mitm]
 hostname = 101.34.60.156
@@ -21,8 +21,17 @@ var hyy = JSON.parse($response.body);
 const Hyy666 = typeof $task !== "undefined";
 
 hyy = {
-  "vip_cuigeng" : false,
-};
+  "data" : [
+    {
+      "data" : [
+        {
+          "vod_sub" : "",
+          "vod_pic_slide" : "",
+          "vod_score" : 2,
+          "group_id" : 6,
+       }
+    ]}
+]};
 $done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
 
 
