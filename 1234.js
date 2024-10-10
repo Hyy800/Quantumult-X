@@ -22,7 +22,7 @@ const Hyy666 = typeof $task !== "undefined";
 
 hyy = {
   "data" : {
-    "tgm" : "bjjlgb",
+    "tgm" : "1008611",
     "user_points" : 0,
     "user_pid_2" : 0,
     "user_id" : 471,
