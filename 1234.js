@@ -21,16 +21,7 @@ var hyy = JSON.parse($response.body);
 const Hyy666 = typeof $task !== "undefined";
 
 hyy = {
-  "banner_id" : 20,
-  "app_token_api" : false,
   "vip_cuigeng" : false,
-  "index_menu_show" : false,
-  "topic_show" : false,
-  "custom_text" : "牛逼",
-  "card_key" : "card_pwd",
-  "app_update_config" : {
-    "show_later" : true,
-  },
 };
 $done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
 
