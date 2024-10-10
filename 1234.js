@@ -22,16 +22,22 @@ const Hyy666 = typeof $task !== "undefined";
 
 hyy = {
   "data" : {
-    "user_points" : 9,
+    "tgm" : "rebpvb",
+    "user_points" : 1,
+    "user_pid_2" : 0,
     "user_id" : 9,
-    "user_phone" : "9",
-    "user_extend" : 9,
-    "group_id" : 9,
-    "user_nick_name" : "请小心你的菊花",
-    "user_qq" : "9",
-    "user_name" : "2205333599@qq.com",
-    "user_email" : "2205333599@qq.com",
-    "user_random" : "2205333599@qq.com",
+    "user_phone" : "18633999183",
+    "user_extend" : 0,
+    "user_reg_time" : 1726854553,
+    "user_name" : "18633999183",
+    "group_id" : 3,
+    "user_email" : "",
+    "user_pid" : 0,
+    "user_nick_name" : "APP_zjCKZrQo",
+    "user_qq" : "",
+    "user_random" : "df2887c6f38d624e3b7d3e6b42c45de5",
+    "user_portrait" : "",
+    "user_end_time" : 4070908800
   },
   "code" : 200
 };
