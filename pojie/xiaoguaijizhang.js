@@ -12,29 +12,20 @@ hostname = tcbff.xiaoguaijizhang.cn
 
 let obj = {};
 
-if (typeof $response == "undefined") {
-  // 请求处理
-  delete $request.headers["x-app-etag"];
-  delete $request.headers["X-App-ETag"];
+if(typeof $response == "undefined") {
+  delete $request.headers["x-revenuecat-etag"];
+  delete $request.headers["X-RevenueCat-ETag"];
   obj.headers = $request.headers;
 } else {
-  // 响应处理
   let body = JSON.parse(typeof $response != "undefined" && $response.body || null);
-<<<<<<< Updated upstream
-  if (body && body.user) {
-    // 修改用户信息
-    body.user.isVip = true; // 设置用户为VIP
-    body.user.membership_type = "premium"; // 设置会员类型为高级
-    body.user.subscriptionEndDate = "2999-12-31T23:59:59Z"; // 设置订阅到期时间
-    obj.body = JSON.stringify(body);
-  }
-=======
   obj.body = JSON.stringify({
+    "message": "successful",
     "data": {
+      "vip": 1,
       "isVip": true,
+      "membership_type": premium
     }
   });
->>>>>>> Stashed changes
 }
 
 $done(obj);
