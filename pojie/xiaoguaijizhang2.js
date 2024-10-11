@@ -25,18 +25,6 @@ if(typeof $response == "undefined") {
     "message": "successful",
     "data": {
       "virtual": {},
-      "_id": "66fb1b3012a137a45a8096b0",
-      "vip": 3,
-      "create_time": 1727732527,
-      "vip_create_time": 1727732527,
-      "phone": "",
-      "wechat_id": "o2GVx6R36oX0K2KRDg5_kmBSgucw",
-      "headimgurl": "https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEIovZPhFHiaetGsibx51bGtYgEd4BYcUj85cjuYShgMDAnmJuxewJrha8j04iccEqKxYyV8xH8gSShLmvrg4H1VuBD6FLwwc0fztrSV2BES63m4Q/132",
-      "nick_name": "f09f8d8a",
-      "wechat_unionid": "opPgJ6hdI71n_2Uo4UDPRsn_Lx7I",
-      "os_type": "ios",
-      "channel": "AppStore",
-      "ver": "2.2.5",
       "isVip": true,
       "membership_type": 1
     }
