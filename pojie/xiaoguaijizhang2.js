@@ -1,5 +1,4 @@
 /*************************************
-
 项目名称：小乖记账-解锁会员
 更新日期：2024-10-12
 使用声明：⚠️仅供参考，🈲转载与售卖！
@@ -19,7 +18,6 @@ if(typeof $response == "undefined") {
   obj.headers = $request.headers;
 } else {
   let body = JSON.parse(typeof $response != "undefined" && $response.body || null);
-  // 替换为提供的 JSON 数据
   obj.body = JSON.stringify({
     "code": 0,
     "message": "successful",
