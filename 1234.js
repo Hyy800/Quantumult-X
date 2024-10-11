@@ -1,4 +1,4 @@
-###瞬连vpn
+###瞬连vpn-niubi
 
 [rewrite_local]
 ^https://soonlink.xn--wqr30o34q.xn--io0a7i/api/v1/user/getSubscribe url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
