@@ -19,10 +19,7 @@ if(typeof $response == "undefined") {
 } else {
   let body = JSON.parse(typeof $response != "undefined" && $response.body || null);
   obj.body = JSON.stringify({
-    "code": 0,
-    "message": "successful",
     "data": {
-      "virtual": {},
       "isVip": true,
       "membership_type": 1
     }
