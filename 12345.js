@@ -22,7 +22,11 @@ var hyy = JSON.parse($response.body);
 const Hyy666 = typeof $task !== "undefined";
 
 // 创建自定义会话响应
-hyy = {	"code": 0,	"data": null,	"msg": "failure"};
+hyy = {
+  "code": 0,
+  "data": null,
+  "msg": "failure"
+};
 
 // 返回自定义响应
 $done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
