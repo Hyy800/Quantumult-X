@@ -17,11 +17,4 @@ hostname = 101.34.60.156
 
 *************************************/
 
-var hyy = JSON.parse($response.body);
-const Hyy666 = typeof $task !== "undefined";
-
-hyy = {
-  "data" : 0,
-  "code" : 200
-};
-$done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
+var hyy = JSON.parse($response.body);const Hyy666 = typeof $task !== "undefined";// 创建自定义会话响应hyy = {  "data": {    "user_id": 459,    "user_nick_name": "永久会员",    "expiretime": null, // 表示没有过期    "paytype": 1,    "user_points": 9999,    "user_phone": "1",    "user_extend": 1,    "group_id": 1,    "user_qq": "1"  },  "code": 200,  "message": "获取会员信息成功"};// 返回自定义响应$done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
