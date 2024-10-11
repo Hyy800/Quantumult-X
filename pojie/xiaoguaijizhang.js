@@ -1,3 +1,4 @@
+#重写
 
 [rewrite_local]
 ^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
@@ -7,9 +8,20 @@ hostname = tcbff.xiaoguaijizhang.cn
 
 *************************************/
 
+// 解析响应体
 var hyy = JSON.parse($response.body);
-const Hyy666 = typeof $task !== "undefined";
 
-hyy = {  "message": "successful",  "data": {    "vip": 3,    "channel": "AppStore",    "isVip": true  }};
+// 创建新的响应数据
+hyy = {  
+    "message": "successful",  
+    "data": {    
+        "vip": 3,    
+        "channel": "AppStore",    
+        "isVip": true  
+    }
+};
 
-$done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
+// 返回自定义的响应
+$done({status: "HTTP/1.1 200 OK", body: JSON.stringify(hyy)});
+
+确保保存的文件符合圈X的文件结构和格式，必要时调整 URL 和其他参数。如果有任何其他需求，欢迎继续询问！
