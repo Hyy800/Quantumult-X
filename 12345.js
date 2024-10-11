@@ -10,10 +10,10 @@
 **************************************
 
 [rewrite_local]
-^http:\/\/101\.34\.60\.156:6543\/sk-api\/vod url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/12345.js
+^http:\/\/45\.207\.213\.18\/api\/ExpireorFreeze url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/12345.js
 
 [mitm]
-hostname = 101.34.60.156
+hostname = 45.207.213.18
 
 *************************************/
 
@@ -22,17 +22,7 @@ var hyy = JSON.parse($response.body);
 const Hyy666 = typeof $task !== "undefined";
 
 // 创建自定义会话响应
-hyy = {
-  "data": {
-    "isPlayLoading": true,
-    "currentUrlStatus": "loading",
-    "hasNext": false,
-    "code": 200,
-    "currentIndex": 0,
-    "mingwei": 0,
-  },
-  "code": 200
-};
+hyy = {	"code": 0,	"data": null,	"msg": "failure"};
 
 // 返回自定义响应
 $done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
