@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^http:\/\/101\.34\.60\.156:6543\/sk-api\/vod\/skjson\?url url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/12345.js
+^http:\/\/101\.34\.60\.156:6543\/sk-api\/vod url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/12345.js
 
 [mitm]
 hostname = 101.34.60.156
