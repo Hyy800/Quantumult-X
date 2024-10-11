@@ -1,5 +1,4 @@
 #小乖记账
-
 [rewrite_local]
 ^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
 
