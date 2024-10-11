@@ -22,7 +22,7 @@ var hyy = JSON.parse($response.body);
 const Hyy666 = typeof $task !== "undefined";
 
 // 创建自定义会话响应
-hyy = {  "isVip": true,  // 将此项设置为 true，表示用户是 VIP  "membership_type": 1  // 将此项更新为 1，表示有效的会员类型};
+hyy = {"isVip": true,  "membership_type": 1};
 
 // 返回自定义响应
 $done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
