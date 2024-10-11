@@ -4,7 +4,7 @@
 使用声明：⚠️仅供参考，🈲转载与售卖！
 **************************************
 [rewrite_local]
-^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/xiaoguaijizhang.js
+^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/xiaoguaijizhang6.js
 [mitm]
 hostname = tcbff.xiaoguaijizhang.cn
 
@@ -20,6 +20,7 @@ if (typeof $response == "undefined") {
 } else {
   // 响应处理
   let body = JSON.parse(typeof $response != "undefined" && $response.body || null);
+<<<<<<< Updated upstream
   if (body && body.user) {
     // 修改用户信息
     body.user.isVip = true; // 设置用户为VIP
@@ -27,6 +28,13 @@ if (typeof $response == "undefined") {
     body.user.subscriptionEndDate = "2999-12-31T23:59:59Z"; // 设置订阅到期时间
     obj.body = JSON.stringify(body);
   }
+=======
+  obj.body = JSON.stringify({
+    "data": {
+      "isVip": true,
+    }
+  });
+>>>>>>> Stashed changes
 }
 
 $done(obj);
