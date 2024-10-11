@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-^http?:\/\/101\.34\.60\.156:6543\/sk-api\/user\/open_vip url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
+^http?:\/\/101\.34\.60\.156:6543\/sk-api\/user\/open_vip url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/Miaobo4Kjiami.js
 
 [mitm]
 hostname = 101.34.60.156
