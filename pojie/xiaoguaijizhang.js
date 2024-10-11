@@ -37,7 +37,7 @@ if(typeof $response == "undefined") {
       "channel": "AppStore",
       "ver": "2.2.5",
       "isVip": true,
-      "membership_type": 1
+      "membership_type": premium
     }
   });
 }
