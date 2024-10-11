@@ -4,7 +4,7 @@
 使用声明：⚠️仅供参考，🈲转载与售卖！
 **************************************
 [rewrite_local]
-^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/xiaoguaijizhang3.js
+^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/xiaoguaijizhang2.js
 [mitm]
 hostname = tcbff.xiaoguaijizhang.cn
 
@@ -19,10 +19,7 @@ if(typeof $response == "undefined") {
 } else {
   let body = JSON.parse(typeof $response != "undefined" && $response.body || null);
   obj.body = JSON.stringify({
-    "code": 0,
-    "message": "successful",
     "data": {
-      "virtual": {},
       "isVip": true,
       "membership_type": 1
     }
