@@ -1,4 +1,5 @@
-##TaskFlow任务与清单-解锁订阅
+/*
+TaskFlow任务与清单-解锁订阅
 [rewrite_local]
 ^https:\/\/api\.revenuecat\.com\/v1\/receipts url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
 
