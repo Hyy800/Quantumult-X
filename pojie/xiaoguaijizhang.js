@@ -22,8 +22,8 @@ if (hyy.data.vip > 0) {
     hyy.message = "欢迎，尊贵的 VIP 用户!";
 } else {
     // 如果不是 VIP，直接返回不处理
-    hyy = {"code": 1, "message": "非 VIP 用户，无法访问"};
-}
+    hyy = {"code": 1, "message": "非 VIP 用户，无法访问"}
+};
 
 // 最终构建的新 JSON 对象
 $done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
