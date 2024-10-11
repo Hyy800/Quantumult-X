@@ -1,10 +1,10 @@
 ###瞬连vpn
 
 [rewrite_local]
-^https:\/\/soonlink\.xn--wqr30o34q\.xn--io0a7i\/api\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
+^ https://soonlink.xn--wqr30o34q.xn--io0a7i/api/v1/user/getSubscribe url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
 
 [mitm]
-hostname = soonlink.xn--wqr30o34q.xn--io0a7i
+hostname = soonlink.xn, wqr30o34q.xn
 
 *************************************/
 
@@ -15,22 +15,56 @@ hyy = {
   "status": "success",
   "message": "操作成功",
   "data": {
-    "commission_balance": 0,
-    "banned": 0,
-    "remind_expire": 1,
-    "plan_id": 6,
-    "discount": null,
-    "uuid": "11111111-1234-1234-1234-121728504489",
-    "created_at": 1728504499,
-    "avatar_url": "https://cdn.v2ex.com/gravatar/d41d8cd98f00b204e9800998ecf8427e?s=64&d=identicon",
-    "balance": 0,
-    "remind_traffic": 1,
-    "expired_at": 1950972499,  // 1728763699 + 10*365*24*60*60
-    "commission_rate": null,
-    "telegram_id": null,
-    "email": null,
-    "transfer_enable": 107374182400,  // 999GB = 999 * 1024 * 1024 * 1024
-    "last_login_at": null
+    "month_price": 50000,
+    "half_year_price": 240000,
+    "group_id": 4,
+    "speed_limit": null,
+    "two_year_price": null,
+    "reset_price": null,
+    "year_price": 420000,
+    "onetime_price": null,
+    "capacity_limit": null,
+    "sort": 7,
+    "quarter_price": 127500,
+    "updated_at": 1723559574,
+    "name": "Team计划",
+    "id": 9,
+    "show": 1,
+    "renew": 1,
+    "three_year_price": null,
+    "transfer_enable": 9999,
+    "reset_traffic_method": null,
+    "created_at": 1720811414,
+    "content": [
+      {
+        "feature": "无带宽速率限制",
+        "support": true
+      },
+      {
+        "feature": "解锁Netfilx、Hulu、HBO、Disney+、Dazn等主流流媒体平台",
+        "support": true
+      },
+      {
+        "feature": "支持海外用户，支持全球使用",
+        "support": true
+      },
+      {
+        "feature": "支持30设备同时使用",
+        "support": true
+      },
+      {
+        "feature": "智能负载加速+IPLC",
+        "support": true
+      },
+      {
+        "feature": "全球主流地区高速节点",
+        "support": true
+      },
+      {
+        "feature": "7*24小时技术支持",
+        "support": true
+      }
+    ]
   },
   "error": null
 };
