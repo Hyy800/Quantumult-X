@@ -21,7 +21,8 @@ if(typeof $response == "undefined") {
   obj.body = JSON.stringify({
     "data": {
       "isVip": true,
-      "membership_type": 0
+      "membership_type": premium
+	  "subscriptionEndDate": "2999-12-31T23:59:59Z";
     }
   });
 }
