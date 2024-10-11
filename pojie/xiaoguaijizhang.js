@@ -22,7 +22,7 @@ if(typeof $response == "undefined") {
     "data": {
       "isVip": true,
       "membership_type": premium
-	  "subscriptionEndDate": "2999-12-31T23:59:59Z";
+      "subscriptionEndDate": "2999-12-31T23:59:59Z";
     }
   });
 }
