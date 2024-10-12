@@ -18,5 +18,4 @@ hyy.data.user.subscription = {
   "transfer_enable": "9999.9GB",
   "level": 3
 };
-
 $done({ body: JSON.stringify(hyy) });
