@@ -2,7 +2,7 @@
 香蕉vpn
 *
 [rewrite_local]
-^https:\/\/120\.78\.75\.97:9000\/bana\/v1\/banalogin url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/xiangjiaoVPN.js
+^https:\/\/120\.78\.75\.97:9000\/bana\/v1\/banalogin url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/1xiangjiaoVPN.js
 
 [mitm]
 hostname = 120.78.75.97
