@@ -11,7 +11,8 @@ hostname = api.moises.ai
 var hyy = JSON.parse($response.body);
 const Hyy666 = typeof $task !== "undefined";
 
-hyy = {"subscription": { 
+hyy = {
+  "subscription": { 
   "isPremium": true, // 现在用户是付费用户
   "details": {
     "__typename": "UserSubscriptionDetails",
