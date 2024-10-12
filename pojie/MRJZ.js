@@ -9,21 +9,19 @@
 hostname = fastdiet.incmoon.com
 *******************************/
 
-var response = JSON.parse($response.body); // 解析当前响应的 JSON 数据
-const isTaskDefined = typeof $task !== "undefined"; // 判断当前环境是否支持 $task
+let obj = JSON.parse($response.body);
 
-// 构造新的响应体
-response = {
-  "data": {
-    "vipInfo": { // VIP信息部分
-      "vipExpDay": 99999, // VIP有效天数，设置为99年
-      "vipRole": "vip", // 用户的VIP角色
+obj.data = {
+    ...obj.data,
+    vipInfo: {
+        ...obj.data.vipInfo,
+        vipExpDay: 99999,
+        vipRole: "vip",
     },
-    "activityInfo": { // 活动信息部分
-      "showRedBookActivity": false // 设置为不显示红书活动
+    activityInfo: {
+        ...obj.data.activityInfo,
+        showRedBookActivity: false
     }
-  },
 };
 
-// 返回修改后的响应对象
-$done({status: isTaskDefined ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(response)});
+$done({ body: JSON.stringify(obj) });
