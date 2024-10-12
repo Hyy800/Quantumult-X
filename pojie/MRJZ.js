@@ -18,9 +18,7 @@ response = {
   "data": {
     "vipInfo": { // VIP信息部分
       "vipExpDay": 36385, // VIP有效天数，设置为99年
-      "vipType": "VIP", // VIP类型
       "vipRole": "vip", // 用户的VIP角色
-      "showExpPop": true // 设置为显示VIP相关的经验弹窗
     },
     "activityInfo": { // 活动信息部分
       "showRedBookActivity": false // 设置为不显示红书活动
