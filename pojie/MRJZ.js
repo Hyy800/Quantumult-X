@@ -25,16 +25,7 @@ hyy = {
       "activityResidualTimeStemp": 86297000,
       "showRedBookActivity": true
     },
-    "userInfo": {
-      "userPicture": "https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEIgrApHl4XOiczq7He40Ztqp2cQPQiaticY4zbgwia6FIibQnBOPsIxhlYrdx1dwuhIAFA0o63MSSQbmfkjoqAze6hfSpapmwbKRibjCvPicVZKpPF2Q/132",
-      "userId": "089fce2a1ab043dc81ec0fce325a7519",
-      "userIdentityNumber": "i9evy081",
-      "userNickName": "永久会员"
-    },
-    "bindingInfo": {
-      "bindingQqName": "",
-      "bindingWeChatName": "永久会员"
-    }
+
   },
   "code": 200
 };
