@@ -18,8 +18,8 @@ if(typeof $response == "undefined") {
 }else {
   let body = JSON.parse(typeof $response != "undefined" && $response.body || null);
   if(body && body.subscriber) {
-    const product_id = "lf_5.99_lifetime";//修改这个数值
-    const entitlement = "unlimited_access";//修改这个数值
+    const product_id = "pixelmator_photo_pro_subscription_v1";//修改这个数值
+    const entitlement = "pro";//修改这个数值
     let data = {"expires_date": "2999-01-01T00:00:00Z","original_purchase_date":"2021-01-01T00:00:00Z","purchase_date": "2021-01-01T00:00:00Z","ownership_type": "PURCHASED","store": "app_store"};
     let subscriber = body.subscriber;
     subscriber.entitlements[(entitlement)] = subscriber.subscriptions[(product_id)] = data;        
