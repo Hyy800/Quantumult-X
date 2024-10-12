@@ -9,11 +9,12 @@
 hostname = fastdiet.incmoon.com
 *******************************/
 
-var hyy = JSON.parse($response.body);
-const Hyy666 = typeof $task !== "undefined";
+var response = JSON.parse($response.body); // 解析当前响应的 JSON 数据
+const isTaskDefined = typeof $task !== "undefined"; // 判断当前环境是否支持 $task
 
-hyy = {
-  "msg": "请求成功",
+// 构造新的响应体
+response = {
+  "msg": "请求成功", // 请求成功的消息
   "data": {
     "vipInfo": { // VIP信息部分
       "vipExpDay": 36385, // VIP有效天数，设置为99年
@@ -25,7 +26,8 @@ hyy = {
       "showRedBookActivity": false // 设置为不显示红书活动
     }
   },
-  "code": 200 // 响应码
+  "code": 200 // 响应码，表示成功
 };
 
-$done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
+// 返回修改后的响应对象
+$done({status: isTaskDefined ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(response)});
