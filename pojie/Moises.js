@@ -22,3 +22,4 @@ hyy = {
   "isPro": true, // 用户现在是高级会员
   "plan": "pro", // 设置为 Pro 计划
 }};
+$done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
