@@ -9,17 +9,21 @@ hostname = api.moises.ai
 */
 
 var hyy = JSON.parse($response.body);
-const Hyy666 = typeof $task !== "undefined";
 
-hyy = {
-"subscription": { 
-  "isPremium": true, // 用户现在是付费用户
+hyy.data.user.subscription = { 
+  ...hyy.data.user.subscription,
+  "isPremium": true,
   "details": {
-    "__typename": "UserSubscriptionDetails",
-    "planCycle": "lifetime" // 假设用户的付费计划是按月的
+    ...hyy.data.user.subscription.details,
+    "providerGateway": "Apple Pay",
+    "providerName": "Apple Subscription Service",
+    "planCycle": "lifetime"
   },
-  "currentMonthlyUsage": 0, // 当前月度使用量
-  "isPro": true, // 用户现在是高级会员
-  "plan": "pro", // 设置为 Pro 计划
-}};
-$done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
+  "isPro": true,
+  "availableCredits": 999,
+  "plan": "Pro",
+  "subscriptionType": "individual",
+  "__typename": "UserSubscription"
+};
+
+$done({ body: JSON.stringify(hyy) });
