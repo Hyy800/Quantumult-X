@@ -16,13 +16,9 @@ hyy = {
   "isPremium": true, // 用户现在是付费用户
   "details": {
     "__typename": "UserSubscriptionDetails",
-    "providerGateway": "示例网关", // 假设的提供商网关
-    "providerName": "示例提供商", // 假设的提供商名称
-    "planCycle": "monthly" // 假设用户的付费计划是按月的
+    "planCycle": "lifetime" // 假设用户的付费计划是按月的
   },
   "currentMonthlyUsage": 0, // 当前月度使用量
   "isPro": true, // 用户现在是高级会员
-  "availableCredits": 10, // 假设新的可用信用点数
   "plan": "pro", // 设置为 Pro 计划
-  "subscriptionType": "individual" // 订阅类型：个人
 }};
