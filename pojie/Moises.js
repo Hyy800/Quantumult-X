@@ -1,31 +1,46 @@
-/******************************* 
-Moises-解锁订阅
-2024-10-12
-********************************
-
+/*
+Moises-音乐人应用
+*
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/Moises.js
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) url script-request-header https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/Moises.js
-[mitm] 
-hostname = api.revenuecat.com
-*******************************/
-let obj = {};
+^https:\/\/api\.moises\.ai\/graphql url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/Moises.js
 
-if(typeof $response == "undefined") {
-  delete $request.headers["x-revenuecat-etag"];
-  delete $request.headers["X-RevenueCat-ETag"];
-  obj.headers = $request.headers;
-}else {
-  let body = JSON.parse(typeof $response != "undefined" && $response.body || null);
-  if(body && body.subscriber) {
-    const product_id = "pro_yearly";//修改这个数值
-    const entitlement = "pro";//修改这个数值
-    let data = {"expires_date": "2999-01-01T00:00:00Z","original_purchase_date":"2021-01-01T00:00:00Z","purchase_date": "2021-01-01T00:00:00Z","ownership_type": "PURCHASED","store": "app_store"};
-    let subscriber = body.subscriber;
-    subscriber.entitlements[(entitlement)] = subscriber.subscriptions[(product_id)] = data;        
-    subscriber.entitlements[(entitlement)].product_identifier = product_id;   
-    obj.body = JSON.stringify(body);
-  } 
+[mitm]
+hostname = api.moises.ai
+*/
+
+var hyy = JSON.parse($response.body);
+const Hyy666 = typeof $task !== "undefined";
+
+hyy = {"subscription": { 
+  "isPremium": true, // 现在用户是付费用户
+  "details": {
+    "__typename": "UserSubscriptionDetails",
+    "providerGateway": "永久", // 使用"永久"来表示不是周期性的计划
+    "providerName": "示例提供商", // 假设的提供商名称
+    "planCycle": "永久" // 使用"永久"来表示无固定周期
+  },
+  "currentMonthlyUsage": 0, // 当前月度使用量
+  "isPro": true, // 现在用户是高级会员
+  "availableCredits": 5, // 用户可用的信用点数
+  "plan": "高级", // 修改为高级计划
+  "subscriptionType": "individual" // 订阅类型：个人
+}};
+
+/*
+
+"subscription": { 
+  "isPremium": true, // 现在用户是付费用户
+  "details": {
+    "__typename": "UserSubscriptionDetails",
+    "providerGateway": "永久", // 使用"永久"来表示不是周期性的计划
+    "providerName": "示例提供商", // 假设的提供商名称
+    "planCycle": "永久" // 使用"永久"来表示无固定周期
+  },
+  "currentMonthlyUsage": 0, // 当前月度使用量
+  "isPro": true, // 现在用户是高级会员
+  "availableCredits": 5, // 用户可用的信用点数
+  "plan": "高级", // 修改为高级计划
+  "subscriptionType": "individual" // 订阅类型：个人
 }
 
-$done(obj);
+*/
