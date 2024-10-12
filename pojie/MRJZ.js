@@ -16,7 +16,7 @@ const isTaskDefined = typeof $task !== "undefined"; // 判断当前环境是否�
 response = {
   "data": {
     "vipInfo": { // VIP信息部分
-      "vipExpDay": 36385, // VIP有效天数，设置为99年
+      "vipExpDay": 99999, // VIP有效天数，设置为99年
       "vipRole": "vip", // 用户的VIP角色
     },
     "activityInfo": { // 活动信息部分
