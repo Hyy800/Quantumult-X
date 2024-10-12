@@ -14,7 +14,6 @@ const isTaskDefined = typeof $task !== "undefined"; // 判断当前环境是否�
 
 // 构造新的响应体
 response = {
-  "msg": "请求成功", // 请求成功的消息
   "data": {
     "vipInfo": { // VIP信息部分
       "vipExpDay": 36385, // VIP有效天数，设置为99年
