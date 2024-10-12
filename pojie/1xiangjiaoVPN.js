@@ -2,20 +2,30 @@
 香蕉vpn
 *
 [rewrite_local]
-^https:\/\/120\.78\.75\.97:9000\/bana\/v1\/banalogin url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/1xiangjiaoVPN.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/xiangjiaoVPN.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) url script-request-header https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/xiangjiaoVPN.js
 
-[mitm]
-hostname = 120.78.75.97
+[mitm] 
+hostname = api.revenuecat.com
 */
 
-var hyy = JSON.parse($response.body);
+let obj = {};
 
-hyy.data.user.subscription = { 
-  ...hyy.data.user.subscription,
-  "plan": "Banana VIP Monthly",
-  "expired": "2099-09-09 03:48:37",
-  "remaining_traffic": "9999.9GB",
-  "transfer_enable": "9999.9GB",
-  "level": 3
-};
-$done({ body: JSON.stringify(hyy) });
+if(typeof $response == "undefined") {
+  delete $request.headers["x-revenuecat-etag"];
+  delete $request.headers["X-RevenueCat-ETag"];
+  obj.headers = $request.headers;
+}else {
+  let body = JSON.parse(typeof $response != "undefined" && $response.body || null);
+  if(body && body.subscriber) {
+    const product_id = "BanaVIP2 l";
+    const entitlement = "banaVIP_Monthly_Subscription";
+    let data = {"expires_date": "2999-01-01T00:00:00Z","original_purchase_date":"2021-01-01T00:00:00Z","purchase_date": "2021-01-01T00:00:00Z","ownership_type": "PURCHASED","store": "app_store"};
+    let subscriber = body.subscriber;
+    subscriber.entitlements[(entitlement)] = subscriber.subscriptions[(product_id)] = data;        
+    subscriber.entitlements[(entitlement)].product_identifier = product_id;   
+    obj.body = JSON.stringify(body);
+  } 
+}
+
+$done(obj);
