@@ -26,7 +26,6 @@ response = {
       "showRedBookActivity": false // 设置为不显示红书活动
     }
   },
-  "code": 200 // 响应码，表示成功
 };
 
 // 返回修改后的响应对象
