@@ -15,23 +15,20 @@ var hyy = JSON.parse($response.body);
 const Hyy666 = typeof $task !== "undefined";
 
 if (Hyy666) {
-    hyy = {
-	"ENCRYPTION": 0, // 加密状态，0表示未加密
-	"code": 1, // 返回状态码，1表示成功
-	"data": {
-		"vod_play_list": [ // 视频播放列表
-			{
-				"urls": [ // URL对象列表
-					{
-						"is_free": true // 该内容是否免费，true表示免费
-					}
-					// 这里可以有更多的URL对象，每个对象代表一个视频链接及其属性
-				]
-			}
-			// 可能还有更多的视频播放对象
-		]
-	}
-	"msg" : "ok"
-};
-
-$done({ status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy) });
+    const hyy = {
+        "ENCRYPTION": 0,
+        "code": 1,
+        "data": { 
+            "vod_play_list": [
+                {
+                    "urls": [
+                        {
+                            "is_free": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "msg": "ok"
+    };
+}
