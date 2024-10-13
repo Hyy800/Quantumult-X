@@ -4,7 +4,7 @@
 脚本作者：Hyy
 **************************************
 [rewrite_local]
-^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find url script-response-body https://raw.githubusercontent.com/Hyy-Max/Quantumult-X/refs/heads/main/Lento.js
+^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find url script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/xiaoguaijizhang.js
 
 [mitm]
 hostname = tcbff.xiaoguaijizhang.cn
