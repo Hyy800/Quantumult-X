@@ -1,6 +1,6 @@
 /*
 [rewrite_local]
-^http:\/\/101\.34\.60\.156:6543\/sk-api\/vod\/skjson url https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/123.js
+^http:\/\/101\.34\.60\.156:6543\/sk-api\/vod\/skjson url https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
 [mitm]
 hostname = 101.34.60.156
 */
