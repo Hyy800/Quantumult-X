@@ -11,24 +11,13 @@ hostname = 111.229.140.167
 
 *************************************/
 
-var hyy = JSON.parse($response.body);
-const Hyy666 = typeof $task !== "undefined";
+var response = JSON.parse($response.body);
 
-if (Hyy666) {
-    const hyy = {
-        "ENCRYPTION": 0,
-        "code": 1,
-        "data": { 
-            "vod_play_list": [
-                {
-                    "urls": [
-                        {
-                            "is_free": true
-                        }
-                    ]
-                }
-            ]
-        },
-        "msg": "ok"
-    };
-}
+// 提取并修改数据
+var updatedData = {
+    ...response.data.vod_play_list.urls,
+    "is_free": true
+};
+
+// 将结果转换为 JSON 字符串并返回
+$done({ body: JSON.stringify(updatedData) });
