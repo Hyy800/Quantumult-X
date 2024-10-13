@@ -16,7 +16,7 @@ var response = JSON.parse($response.body);
 // 提取并修改数据
 var updatedData = {
     ...response.data.vod_play_list.urls,
-    "is_free": true
+    "is_free" = ltrue
 };
 
 // 将结果转换为 JSON 字符串并返回
