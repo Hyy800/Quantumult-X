@@ -1,6 +1,6 @@
 /*
 [rewrite_local]
-^https:\/\/tcbff\.xiaoguaijizhang\.cn\/v1\/account\/user\/find script-response-body https://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/1234.js
+^https?:\/\/lentoapp\.com:8081\/getUserMemberShipInfo url script-response-body https://raw.githubusercontent.com/Hyy-Max/Quantumult-X/refs/heads/main/pojie/xiaoguaijizhang.js
 [mitm]
 hostname = tcbff.xiaoguaijizhang.cn
 */
