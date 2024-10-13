@@ -22,7 +22,7 @@ hyy = {
     "message": "successful",
     "data": {
         "virtual": {},
-        "vip": 6,
+        "vip": 1,
         "isVip": true,
         "membership_type": 1
     }
