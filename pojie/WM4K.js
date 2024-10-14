@@ -11,15 +11,15 @@ hostname = 111.229.140.167
 
 *************************************/
 
-var response = JSON.parse($response.body);
+var hyy = JSON.parse($response.body);
+const Hyy666 = typeof $task !== "undefined";
 
-// 提取并修改数据
-var updatedData = {
-    ...response.data.vod_play_list.urls,
-    "group_id" = 3,
-    "is_free" = true,
-    "try_see" = 99999999,
+hyy = {
+  "data" : {
+    "is_down" : true,
+    "pay_video_login_permission_desc" : "",
+    "need_groups" : [],
+  },
 };
 
-// 将结果转换为 JSON 字符串并返回
-$done({ body: JSON.stringify(updatedData) });
+$done({status: Hyy666 ? "HTTP/1.1 200 OK" : 200, body: JSON.stringify(hyy)});
