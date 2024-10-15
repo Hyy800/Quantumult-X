@@ -1,4 +1,3 @@
-
 import requests
 import json
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
