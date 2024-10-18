@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.telescoep2\.vip\/api\/v5\/user\/ url script-response-body http://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/123.js
+^https:\/\/api\.telescoep2\.vip\/api\/v5\/user url script-response-body http://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/123.js
 
 [mitm]
 hostname = api.telescoep2.vip
