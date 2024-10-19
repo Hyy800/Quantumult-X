@@ -29,10 +29,10 @@ hyy ={
     "safeMode" : false,
     "china" : true,
     "defaultServerId" : "0b83ddce5cab4c37a29bd3927f536b2c",
-    "promoteCount" : 0,
-    "vipEndTime" : "2024-10-19 12:11",
+    "promoteCount" : 99999,
+    "vipEndTime" : "2099-12-31 23:59",
     "shareUrl" : "http://106.52.81.117/share/#/?code=72779618",
-    "hasSignin" : true,
+    "hasSignin" : false,
     "name" : "",
     "vipType" : "svip",  // 将VIP类型修改为SVIP
     "svipEndTime" : "2099-12-31 23:59",  // 修改SVIP到期时间为2099年
@@ -44,7 +44,7 @@ hyy ={
     "defaultServerName" : "新加坡",
     "hasNewMessage" : false,
     "hasPassword" : false,
-    "leftFlow" : 0,
+    "leftFlow" : 9999,
     "logo" : "",
     "svipValid" : true  // 设置SVIP有效
   },
