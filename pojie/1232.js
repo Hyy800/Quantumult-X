@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.go01\.top\/proxy\/user\/my\/info url script-response-body https://raw.githubusercontent.com/Hyy-Max/Quantumult-X/refs/heads/main/pojie/1232.js
+^https:\/\/api\.go01\.top\/proxy\/user\/my\/info url script-response-body http://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/1232.js
 
 [mitm]
 hostname = api.go01.top
