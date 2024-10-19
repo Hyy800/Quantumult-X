@@ -11,6 +11,7 @@
 
 [rewrite_local]
 ^https:\/\/api\.go01\.top\/proxy\/user\/my\/info url script-response-body http://raw.githubusercontent.com/Hyy800/Quantumult-X/refs/heads/Nana/pojie/1232.js
+^https:\/\/yfa-1306490429\.cos\.ap-guangzhou\.myqcloud\.com url reject-200
 
 [mitm]
 hostname = api.go01.top
