@@ -14,7 +14,7 @@
 ^https:\/\/yfa-1306490429\.cos\.ap-guangzhou\.myqcloud\.com url reject-200
 
 [mitm]
-hostname = api.go01.top
+hostname = api.go01.top，yfa-1306490429.cos.ap-guangzhou.myqcloud.com
 
 *************************************/
 
